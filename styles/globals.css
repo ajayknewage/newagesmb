@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,55 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+.theme-color {
+  background-color: #4468e2;
+}
+
+.nav {
+  .link-item {
+    color: #1c4961;
+    opacity: 0.75;
+    font-weight: 500;
+
+    &.active,
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.tiles {
+  .item {
+    height: 250px;
+    border-color: #b4c6ee;
+    .icon {
+      background-color: #ebf0fe;
+    }
+  }
+}
+
+.destinations {
+  background-color: #f0faff;
+  .tabs {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    .active {
+      color: #163235;
+      border-bottom: 3px solid #163235;
+      border-top-left-radius: 2px;
+    }
+  }
+
+  .places {
+    color: #163235;
+
+    .item {
+      .facility {
+        background-color: #1c4961 !important;
+        padding: 5px 10px;
+        border-radius: 50%;
+      }
+    }
+  }
 }
